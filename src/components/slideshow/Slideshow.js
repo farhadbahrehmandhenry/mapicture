@@ -56,7 +56,7 @@ class Slideshow extends Component {
   }
 
   render() {
-    var photos = _.map(this.state.data.results, photo => ({src: photo.urls.full, id: photo.id}));
+    var photos = _.map(this.state.data.results, photo => ({src: photo.urls.small, id: photo.id}));
 
     return (
       <div className="images-container">
