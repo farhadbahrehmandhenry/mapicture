@@ -22,12 +22,9 @@ class Signin extends Component {
     event.preventDefault();
     this.setState({errorMessage: ''});
 
-    fetch('https://my-mapicture-api.herokuapp.com/register', {
+    fetch('https://my-mapicture-api.herokuapp.com/register', { //http://localhost:9000
       method: 'post',
-      headers: {
-        'Content-Type': 'application/json',
-        // 'Access-Control-Allow-Origin': '*'
-      },
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
         email: this.state.signupUsername,
         password: this.state.signupPassword,
@@ -54,10 +51,7 @@ class Signin extends Component {
 
     fetch('https://my-mapicture-api.herokuapp.com/signin', {
       method: 'post',
-      headers: {
-        'Content-Type': 'application/json',
-        // "Access-Control-Allow-Origin": "*"
-      },
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
         email: this.state.signinUsername,
         password: this.state.signinPassword
