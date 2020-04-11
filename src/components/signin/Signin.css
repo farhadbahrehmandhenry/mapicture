@@ -1,0 +1,149 @@
+.signin-signup {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  align-self: center;
+}
+
+.signin-signup-animation {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  align-self: flex-start;
+  justify-self: start;
+  left: 0;
+  background-color: hsl(2, 57%, 40%);
+  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+  repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+  repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  align-self: center;
+}  
+
+.login-register-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.login-register-button {
+  background: none!important;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.signin-container {
+  display: flex;
+  padding: 1rem; 
+  width: 20%;
+  min-width: 300px;
+  height: 50%;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.signup-container {
+  display: flex;
+  padding: 4rem 3rem 4rem 1rem; 
+  width: 20%;
+  min-width: 300px;
+  height: 50%;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.signin-username, 
+.signin-password, 
+.signup-username, 
+.signup-password, 
+.signup-name, 
+.signup-password-confirm {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  width: 70%;
+}
+
+.signin-login, .signup-login {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  width: 70%;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 75%;
+  height: 15%;
+  text-align: start;
+  color: beige;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .signin-username, 
+  .signin-password, 
+  .signup-username, 
+  .signup-password, 
+  .signup-name, 
+  .signup-password-confirm {
+    padding: 0.5rem;
+    margin-left: 4rem;
+    border-radius: 4px;
+    width: 50%;
+    font-size: 10px;
+  }
+
+  .signin-login, .signup-login {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 50%;
+    margin-left: 4rem;
+    font-size: 10px;
+
+  }
+}

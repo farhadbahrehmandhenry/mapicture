@@ -1,0 +1,98 @@
+.images-container {
+  top: 2rem;
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 3rem;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  background-color:#282828;
+}
+
+.image-container img {
+  z-index: 20;
+  margin: 0.1rem;
+}
+
+.full-image {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.full-image img{
+  align-self: center;
+  height: 90%;
+  width: 60%;
+}
+
+.full-image button{
+  position: absolute;
+  left: 0;
+  margin: 2rem 1.5rem 1.5rem 3.7rem;
+  align-self: flex-start;
+  justify-self: start;
+  box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+  padding: 6px 1px;
+  width: 150px;	text-decoration:none;
+  text-shadow:0px -1px 0px #7a2a1d;
+  border-radius: 4px;
+}
+
+.myButton:hover {
+	background-color:#b34332;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.hide-image {
+  opacity: 0
+}
+
+@media only screen and (max-width: 710px) {
+  .full-image img{
+    align-self: center;
+    height: 50%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1028px) and (min-width: 711px) {
+  .full-image img{
+    align-self: center;
+    height: 70%;
+    width: 80%;
+  }
+}

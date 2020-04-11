@@ -1,0 +1,28 @@
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.map-select-container {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: 1;
+}
+
+.slideshow-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hidden-slide {
+  opacity: 0;
+}
+
+.z-index-slide {
+  z-index: 1;
+}

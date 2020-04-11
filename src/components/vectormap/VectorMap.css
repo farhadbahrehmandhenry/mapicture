@@ -1,0 +1,160 @@
+.map-select {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  align-self: center;
+  overflow: hidden;
+}
+
+.vectormap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 78%;
+  height: 80%;
+  top: 5rem
+}
+
+.select-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 18%;
+  height: 80%;
+  align-self: center;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+}
+
+.select {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  top: 5rem;
+  margin-left: 3rem;
+}
+
+.select-button- {
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  width: 150px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  width: 80px;
+  font-size: 10px;
+}
+
+.pretty {
+  margin: 0.5rem;
+  font-size: 10px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.jvectormap-container {
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.jvectormap-zoomin, .jvectormap-zoomout {
+  display: none;
+}
+
+.jvectormap-tip {
+  z-index: 20;
+}
+
+@media only screen and (max-width: 760px) {
+  .map-select {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    /* align-self: center; */
+    overflow: hidden;
+  }
+
+  .select {
+    align-self: center;
+    justify-self: flex-start;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    align-self: flex-end;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    font-size: 10px;
+    margin-left: 1rem;
+  }
+
+  .vectormap {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    justify-self: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 0;
+  }
+
+  .pretty {
+    margin: 0.2rem;
+  }
+
+  .select-button- {
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: none;
+    width: 80px;
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+  }
+}
